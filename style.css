@@ -1,0 +1,261 @@
+.nav_container {
+    width: 100%; /* Set the width to 100% to span the entire width of its container */
+    display: flex;
+    justify-content: space-between; /* Align items at the start and end of the container */
+    align-items: center;
+    padding: 0.5rem;
+    /* Adjust padding as needed */
+  }
+  
+  .left {
+    display: flex;
+  }
+  
+  .right {
+    display: flex;
+  }
+  
+  .nav_logo-img {
+    background-image: url("navlogo.png");
+    background-size: 100% auto;
+    width: 2.4rem;
+    max-width: 2.4rem;
+    height: auto; /* Ensure the height is set to auto to maintain aspect ratio */
+    margin-right: 0.3rem;
+    margin-top: 0.2rem;
+    display: inline-block;
+  }
+  
+  .nav_brand-wordmark {
+    color: var(--black);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-left: auto;
+    display: inline-block;
+  }
+  
+  .nav_tags {
+    display: flex; /* Make the nav_tags a flex container */
+    list-style: none; /* Remove default bullet points for list items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    flex-wrap: nowrap; /* Don't wrap items onto multiple lines */
+  }
+  
+  .nav_tag a {
+    font-size: 0.9rem;
+    color: var(--black);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: none; /* Remove default underline from links */
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .nav_tag a:hover {
+    cursor: pointer;
+  }
+  
+  .nav_dropdown {
+    position: relative; /* Needed for proper dropdown positioning */
+    display: inline-block; /* Make the dropdown display inline */
+  }
+  
+  .nav_dropdown_link {
+    font-size: 0.9rem;
+    color: var(--black);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: none; /* Remove default underline from link */
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: relative; /* Needed for icon positioning (optional) */
+  }
+  
+  .arrow.down {
+    font-size: 0.8rem; /* Adjust font size as needed */
+    position: absolute; /* Position the icon relative to the link text */
+    right: 0.5rem; /* Adjust right positioning of the icon */
+    top: 50%; /* Center the icon vertically */
+    transform: translateY(-50%); /* Center the icon vertically (alternative approach) */
+    color: var(--black); /* Set color for the icon */
+  }
+  
+  .nav_dropdown_content {
+    display: none; /* Initially hide the dropdown content */
+    position: absolute; /* Position the dropdown content relative to the link */
+    background-color: #f1f1f1; /* Set background color for the dropdown */
+    min-width: 100%; /* Set minimum width for the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a slight shadow */
+    z-index: 1; /* Ensure the dropdown content is above other elements */
+  }
+  
+  .nav_dropdown_content a {
+    color: black; /* Set color for dropdown options */
+    padding: 12px 16px; /* Add padding to options */
+    text-decoration: none; /* Remove default underline from options */
+    display: block; /* Make options display as block elements */
+  }
+  
+  .nav_dropdown_content a:hover {
+    background-color: #ddd; 
+} 
+.play {
+    
+    grid-column-gap: 0.625rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 1.5rem;
+    font-family: TT Commons Pro, sans-serif;
+    font-size: .9rem;
+    font-weight: 700;
+    transition: all .1s ease-in-out;
+    display: flex;
+}
+.play:hover {
+    background-color: red; /* Change to your desired red color */
+    /* Optional adjustments for hover effect */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Slight increase in shadow on hover */
+    transform: translateY(-1px); /* Subtle vertical movement on hover (optional) */
+    cursor: pointer;
+}
+
+.first{
+    width: 1218.3px;
+    height: 429.45px;
+    display: flex;
+    align-items: center; 
+    background-image: url("Untitled.png");
+    background-size:cover;
+}
+.center-text {
+  margin-right: 180px;
+  margin-left: 380px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: Lora, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: black;
+    }
+    .btn1{
+        grid-column-gap: 0.625rem;
+        border: 3px solid black;
+        background-color:white;
+        color: black;
+        text-align: center;
+        border-radius: 3rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        font-family: TT Commons Pro, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        transition: all .1s ease-in-out;
+        margin-left: 480px;
+}
+
+.btn1:hover {
+    background-color: white; /* Change to your desired red color */
+    /* Optional adjustments for hover effect */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Slight increase in shadow on hover */
+    transform: translateY(-2px); /* Subtle vertical movement on hover (optional) */
+    cursor: pointer;
+}
+    .btn2{
+            grid-column-gap: 0.625rem;
+            border: 3px solid black;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 3rem;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            font-family: TT Commons Pro, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: all .1s ease-in-out;
+            margin-right: 230px;
+    }
+
+    .btn2:hover {
+        background-color: red; /* Change to your desired red color */
+        /* Optional adjustments for hover effect */
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Slight increase in shadow on hover */
+        transform: translateY(-2px); /* Subtle vertical movement on hover (optional) */
+        cursor: pointer;
+    }
+    .fund-block1 {
+        padding:24px;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        background-color: var(--white);
+        border: 5px solid #000;
+        border-radius: 2rem;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        align-items: center;
+        padding: 24px;
+        display: grid;
+       
+    }
+    .fund-block1-image {
+        max-width: 100%; /* Set a maximum width */
+        max-height: 100%; /* Set a maximum height */
+        object-fit: cover; /* Resize image to fit while maintaining aspect ratio */
+      }
+      
+      
+      .fund-block1-text {
+        width: 50%; /* Adjust text width as needed */
+        text-align: justify; /* Justify text for better readability */
+      }
+      .textsize{
+            font-family: Lora, sans-serif;
+            font-size: 1.125rem;
+            font-weight: 400;
+        
+      }
+      .h1{
+        margin-top: 0;
+    margin-bottom: 0;
+    font-family: TT Commons Pro, sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.15;
+      }
+
+      .play1 {
+    
+        grid-column-gap: 0.625rem;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border: 3px solid #000;
+        border-radius: 3rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4rem 1.5rem;
+        font-family: TT Commons Pro, sans-serif;
+        font-size: .9rem;
+        font-weight: 700;
+        transition: all .1s ease-in-out;
+        display: flex;
+    }
+    .play1:hover {
+        background-color: yellow; /* Change to your desired red color */
+        /* Optional adjustments for hover effect */
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Slight increase in shadow on hover */
+        transform: translateY(-1px); /* Subtle vertical movement on hover (optional) */
+        cursor: pointer;
+    }
